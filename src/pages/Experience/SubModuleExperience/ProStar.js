@@ -1,0 +1,28 @@
+import classes from "./Work.module.css";
+
+const ProStar = () => {
+  return (
+    <>
+      <div className={classes.header}>
+        <h1>ProStar</h1>
+      </div>
+      <div className={classes.bulletPoints}>
+        <ul>
+          <li>
+            Designed and architected automation testing suite from scratch.
+            Transferred all of the test cases written in Jest-Puppeteer to
+            Behave-Selenium for browser compatibility and better code management
+            and maintainability
+          </li>
+          <li>
+            Developed an Employee On-boarding web application which includes
+            training videos and quizes for faster and easier on-boarding process
+          </li>
+          <li>Performed more than 100 regression tests</li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default ProStar;

@@ -1,0 +1,14 @@
+.card {
+  background-color: #2a2e35;
+  border-radius: 0.5rem;
+  width: 35%;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
+  animation: 1s ease-out moveCard;
+  padding: 1rem;
+  /* border: 1px solid red; */
+}
+
+.card:hover {
+  transform: scale(1.01);
+}

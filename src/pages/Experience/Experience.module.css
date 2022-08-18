@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
+
+
+.exp {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  border: 2px solid red;
+  align-items: center;
+  /* justify-content: center; */
+  width: 90%;
+  /* flex-wrap: wrap; */
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.exp::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.exp::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.expi {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* margin-left: 3rem; */
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 5rem;
+  border: .1rem solid lightgrey;
+  cursor: pointer;
+  margin-right: 20rem;
+  align-self: center;
+}
+
+.desc {
+  /* border: .1rem solid lightgrey; */
+  padding: 2rem;
+  width: 70rem;
+  font-family: "Bree Serif", serif;
+  height: 48vh;
+  
+}
+
+.workButton {
+  border: 2px solid #fa8142;
+  background: #12181b;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+.workButton:hover {
+  background-color: #fa8142;
+}
+
+.heading {
+  font-size: 4rem;
+  font-family: "Bree Serif", serif;
+  margin-top: 2rem;
+}
+
+.clicked {
+  background-color: #fa8142;
+}
+

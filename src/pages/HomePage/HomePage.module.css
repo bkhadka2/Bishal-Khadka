@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
+
+.container__main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid yellow; */
+}
+
+.intro {
+  background-image: linear-gradient(-90deg, #fa8142, #ff4088);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container__dynamictext {
+  /* border: 2px solid red; */
+  height: fit-content;
+  margin: 3rem auto;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Bree Serif", serif;
+}
+
+.info {
+  color: #b2becd;
+  display: flex;
+  /* border: 2px solid red; */
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  gap: 4rem;
+  font-family: "Bree Serif", serif;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  width: 98%;
+  border-top: 2px dashed #b2becd;
+}
+
+.button {
+  border: 2px solid #fa8142;
+  background: #12181b;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+}
+
+.button:hover {
+  background-color: #fa8142;
+  transform: translateY(-0.5rem);
+  transition: all 0.2s ease-in-out;
+}
+
+span {
+  /* border: 2px solid #fa8142; */
+  background-image: linear-gradient(90deg, #fa8142, #ff4088);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .info {
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .container__dynamictext {
+    font-size: 1.5rem;
+  }
+
+  .container__main {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}

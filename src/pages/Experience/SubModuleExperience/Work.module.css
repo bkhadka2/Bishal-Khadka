@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+  border-bottom: 4px solid #fa8142;
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+.bulletPoints {
+  text-align: left;
+  padding: 2rem;
+}
+
+li {
+  padding: .5rem;
+}

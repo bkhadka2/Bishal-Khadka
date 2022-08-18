@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
+
+.heading {
+  font-family: "Bree Serif", serif;
+  font-size: 4rem;
+}
+
+.research {
+  display: flex;
+  gap: 20rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
