@@ -4,18 +4,19 @@ import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import AccountTreeRoundedIcon from "@mui/icons-material/AccountTreeRounded";
 import PsychologyRoundedIcon from "@mui/icons-material/PsychologyRounded";
 import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
-import ToggleOnIcon from '@mui/icons-material/ToggleOn';
-// import ToggleOffIcon from '@mui/icons-material/ToggleOff';
+import ToggleOnIcon from "@mui/icons-material/ToggleOn";
+import ToggleOffIcon from "@mui/icons-material/ToggleOff";
 // import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const [enterHome, setEnterHome] = useState(false);
   const [enterAboutme, setEnterAboutme] = useState(false);
   const [enterProject, setEnterProject] = useState(false);
   const [enterSkill, setEnterSkill] = useState(false);
   const [enterExperience, setEnterExperience] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   const homeEnterHandler = () => {
     setEnterHome(true);
@@ -47,6 +48,10 @@ const Navigation = () => {
   const experienceLeaveHandler = () => {
     setEnterExperience(false);
   };
+  const toggleHandler = () => {
+    setToggle((prev) => !prev);
+  };
+  props.toggle(toggle);
   return (
     <div className={classes.container__navigation}>
       <div
@@ -129,11 +134,17 @@ const Navigation = () => {
           </span>
         </NavLink>
       </div>
-      <div className={classes["container__navigation--element"]}>
-        <button>
-          <ToggleOnIcon className={classes.navigation__icon} />
-          <span className={`${classes.icon__noHover}`}>Experience</span>
-        </button>
+      <div className={classes["container__navigation--element"]} onClick={toggleHandler}>
+        {toggle && (
+          <button className={classes.button__toggleOn}>
+            <ToggleOnIcon className={classes.navigation__icon} />
+          </button>
+        )}
+        {!toggle && (
+          <button className={classes.button__toggleOff}>
+            <ToggleOffIcon className={classes.navigation__icon} />
+          </button>
+        )}
       </div>
     </div>
   );

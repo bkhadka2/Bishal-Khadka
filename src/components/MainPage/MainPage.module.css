@@ -9,7 +9,7 @@
 @media screen and (max-width: 500px) {
   .container__main {
     flex-direction: column;
-    gap: 3rem;
+    gap: 0rem;
   }
 }
 

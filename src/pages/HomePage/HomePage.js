@@ -3,7 +3,7 @@ import scientist from "../../components/Assets/scientist.svg";
 import classes from "./HomePage.module.css";
 let index = 0;
 
-const Home = () => {
+const Home = (props) => {
   const [intro, setIntro] = useState("Hello!");
   const text = ["Hola!", "Bonjour!", "nǐn hǎo!", "Namaste!", "konnichiwa!"];
 
@@ -23,13 +23,21 @@ const Home = () => {
 
   return (
     <>
-      <div className={classes.container__main}>
+      <div
+        className={`${classes.container__main} ${
+          props.toggle ? classes["container__main--light"] : ""
+        }`}
+      >
         <div className={classes.container__dynamictext}>
-          <h1 className={classes.intro}>{intro}</h1>
+          <h1 className={classes["container__dynamictext--intro"]}>{intro}</h1>
         </div>
-        <div className={classes.info}>
-          <div>
-            <img src={scientist} alt="" />
+        <div
+          className={`${classes.container__personalInformation} ${
+            props.toggle ? classes["container__personalInformation--light"] : ""
+          }`}
+        >
+          <div className={`${props.toggle ? classes["image--light"] : ""}`}>
+            <img src={scientist} alt="man with glass" />
           </div>
           <div>
             I am <span>Bishal Khadka</span>. Ambitious and hard working software
@@ -45,7 +53,13 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className={classes.button}>Download Resume</button>
+            <button
+              className={`${classes["button__download--resume"]} ${
+                props.toggle ? classes["button__download--resume--light"] : ""
+              }`}
+            >
+              Download Resume
+            </button>
           </a>
         </div>
 

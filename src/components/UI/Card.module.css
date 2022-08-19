@@ -1,5 +1,7 @@
 .card {
   background-color: #2a2e35;
+
+  /* background-color: grey; */
   border-radius: 0.5rem;
   width: 35%;
   height: fit-content;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Uchen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
 
-.card {
+.container__card {
   background-color: #2a2e35;
   border-radius: 0.5rem;
   width: 40%;
@@ -9,16 +9,19 @@
   transition: all 0.2s ease-in-out;
   animation: 1s ease-out moveCard;
   padding: 1rem;
-  /* border: 1px solid red; */
+  margin-top: 3rem;
 }
 
-.card:hover {
+.container__card--light {
+  background-color: #fff;
+}
+
+.container__card:hover {
   transform: scale(1.01);
 }
 
-.image {
+.container__image {
   background-color: black;
-  /* border: 3px solid red; */
   display: flex;
   justify-content: center;
   width: 95%;
@@ -28,25 +31,26 @@
 
 .logo {
   width: 45%;
-  /* border: 3px solid green; */
 }
 
-h3 {
-  /* font-family: 'Edu TAS Beginner', cursive; */
-  /* font-family: 'Lato', sans-serif; */
+.container__card--title {
   font-family: "Uchen", serif;
   color: white;
   letter-spacing: 0.2rem;
   text-align: center;
+  font-size: 2.8rem;
   margin-top: 2rem;
 }
 
-p {
+.container__card--title--light {
+  color: #454e56;
+}
+
+.container__card--desc {
   color: #b2becd;
   text-align: center;
   margin-top: 1.5rem;
   padding: 1rem;
-  /* border: 2px solid green; */
   font-family: "Bree Serif", serif;
 }
 
@@ -68,7 +72,6 @@ p {
 
 .button__common {
   background: #12181b;
-  color: #fff;
   width: 45%;
   padding: 1rem;
   cursor: pointer;
@@ -81,7 +84,6 @@ p {
 
 .button__common2 {
   background: #12181b;
-  color: #fff;
   width: 100%;
   padding: 1rem;
   cursor: pointer;
@@ -100,23 +102,28 @@ button {
   font-size: inherit;
 }
 
-.button2:hover {
+.button--light {
+  background-color: #fff;
+  color: #454e56;
+}
+
+.container__button--orange:hover {
   background-color: #fa8142;
   transform: translateY(-0.5rem);
   transition: all 0.2s ease-in-out;
 }
 
-.button1:hover {
+.container__button--green:hover {
   background-color: #09c372;
   transform: translateY(-0.5rem);
   transition: all 0.2s ease-in-out;
 }
 
-.button1 {
+.container__button--green {
   border: 2px solid #09c372;
 }
 
-.button2 {
+.container__button--orange {
   border: 2px solid #fa8142;
 }
 
@@ -144,14 +151,14 @@ button {
 }
 
 @media screen and (max-width: 1000px) {
-  .card {
+  .container__card {
     width: 85%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .card {
-    width: 90%;
+  .container__card {
+    width: 95%;
   }
 }
 

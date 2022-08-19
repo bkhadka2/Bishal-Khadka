@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
 
-
 .exp {
   color: white;
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  border: 2px solid red;
   align-items: center;
-  /* justify-content: center; */
   width: 90%;
-  /* flex-wrap: wrap; */
   height: 100vh;
   overflow-y: scroll;
 }
@@ -28,11 +24,16 @@
 
 .expi {
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* margin-left: 3rem; */
+}
+
+.button {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  font-size: 2rem;
+  color: grey;
+  text-align: center;
 }
 
 .work {
@@ -40,19 +41,16 @@
   flex-direction: column;
   gap: 10rem;
   padding: 5rem;
-  border: .1rem solid lightgrey;
+  border: 0.1rem solid lightgrey;
   cursor: pointer;
-  margin-right: 20rem;
+  margin-right: 10rem;
   align-self: center;
 }
 
 .desc {
-  /* border: .1rem solid lightgrey; */
   padding: 2rem;
   width: 70rem;
   font-family: "Bree Serif", serif;
-  height: 48vh;
-  
 }
 
 .workButton {
@@ -80,4 +78,57 @@
 .clicked {
   background-color: #fa8142;
 }
+
+@media screen and (max-width: 1200px) {
+  .exp {
+    align-items: center;
+    width: 100%;
+    gap: .2rem;
+  }
+  .expi {
+    width: 100%;
+  }
+  .desc {
+    font-size: 2rem;
+  }
+  .work {
+    gap: 1rem;
+    padding: 5rem;
+    border: 0.1rem solid lightgrey;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .exp {
+    align-items: center;
+    width: 100%;
+    overflow-y: unset;
+    overflow-x: unset;
+    gap: .2rem;
+  }
+  .expi {
+    width: 100%;
+  }
+  .desc {
+    font-size: 1.5rem;
+  }
+  .work {
+    gap: 1rem;
+    padding: 5rem;
+    border: 0.1rem solid lightgrey;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem auto;
+    flex-direction: row;
+  }
+  hr {
+    border-top: none;
+  }
+}
+
 

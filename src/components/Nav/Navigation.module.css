@@ -3,6 +3,7 @@
   width: 10%;
   display: flex;
   background-color: #2a2e35;
+  /* background-color: grey; */
   flex-direction: column;
   gap: 4rem;
   justify-content: center;
@@ -52,15 +53,16 @@ a:link,
   display: none;
 }
 
-.toggle__Dark {
+.button__toggleOn {
+  color: white;
   cursor: pointer;
-  color: rgb(16, 14, 14);
 }
 
-.toggle__Light {
+.button__toggleOff {
+  color: rgb(170, 165, 165);
   cursor: pointer;
-  color: #fff
 }
+
 
 @keyframes navElem {
   0% {

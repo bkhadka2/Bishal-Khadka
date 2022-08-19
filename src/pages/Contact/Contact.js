@@ -3,14 +3,15 @@ import Project from "../../components/Layout/Project";
 import FlexMe from "../../components/UI/FlexMe";
 import linkedin from "../../components/Assets/linkedin.svg";
 
-const AboutMe = () => {
+const Contact = (props) => {
   return (
-    <FlexMe>
+    <FlexMe toggle={props.toggle}>
       <Project
         logo={github}
         title={"GitHub"}
         button_name="Take me there!"
         linkSocial="https://github.com/bkhadka2"
+        toggle={props.toggle}
       />
       <Project
         logo={linkedin}
@@ -22,4 +23,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Contact;

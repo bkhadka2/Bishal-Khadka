@@ -23,23 +23,28 @@ const Experience = () => {
       <div className={classes.heading}>Experiences</div>
       <div className={classes.expi}>
         <div className={classes.work}>
-          <button
-            className={`${classes.workButton} ${
-              prostar ? classes.clicked : ""
-            }`}
-            onClick={prostarHandler}
-          >
-            ProStar
-          </button>
+          <div className={classes.button}>
+            <button
+              className={`${classes.workButton} ${
+                prostar ? classes.clicked : ""
+              }`}
+              onClick={prostarHandler}
+            >
+              ProStar
+            </button>
+            QA and Test Engineer
+          </div>
           <hr />
+          <div className={classes.button}>
           <button
-            className={`${classes.workButton} ${
-              cmu ? classes.clicked : ""
-            }`}
+            className={`${classes.workButton} ${cmu ? classes.clicked : ""}`}
             onClick={cmuHandler}
           >
             CMU
           </button>
+          Research Fellow / <br />
+          Teaching Assistant
+          </div>
         </div>
         <div className={classes.desc}>
           {prostar && <ProStar />}

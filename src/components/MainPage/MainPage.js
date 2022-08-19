@@ -1,5 +1,5 @@
 import classes from "./MainPage.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "../Nav/Navigation";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Contact from "../../pages/Contact/Contact";
@@ -8,27 +8,29 @@ import Projects from "../../pages/Projects/Projects";
 import Skills from "../../pages/Skills/Skills";
 import Experience from "../../pages/Experience/Experience";
 
-const About = () => {
-  const [click, setClick] = useState(false);
+const MainPage = () => {
+  const [toggle, setToggle] = useState(false);
 
-  const clickHandler = () => {
-    setClick((button) => !button);
+  const ToggleHandler = (prev) => {
+    useEffect(() => {
+      setToggle(prev);
+    }, [prev]);
   };
-  console.log(click);
+  console.log(toggle);
 
   return (
     <>
       <div className={classes.container__main}>
-        <Navigation />
+        <Navigation toggle={ToggleHandler} />
         <Switch>
           <Route path="/" exact>
             <Redirect to="/home"></Redirect>
           </Route>
           <Route path="/contact">
-            <Contact />
+            <Contact toggle={toggle}/>
           </Route>
           <Route path="/home">
-            <Home />
+            <Home toggle={toggle}/>
           </Route>
           <Route path="/projects">
             <Projects />
@@ -45,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default MainPage;

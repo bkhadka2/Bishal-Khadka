@@ -6,10 +6,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid yellow; */
 }
 
-.intro {
+.container__main--light {
+  background-color: #dbe1e8;
+}
+
+.container__dynamictext--intro {
   background-image: linear-gradient(-90deg, #fa8142, #ff4088);
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -17,7 +20,6 @@
 }
 
 .container__dynamictext {
-  /* border: 2px solid red; */
   height: fit-content;
   margin: 3rem auto;
   color: white;
@@ -26,16 +28,19 @@
   font-family: "Bree Serif", serif;
 }
 
-.info {
+.container__personalInformation {
   color: #b2becd;
   display: flex;
-  /* border: 2px solid red; */
   width: 70%;
   justify-content: space-around;
   align-items: center;
   text-align: left;
   gap: 4rem;
   font-family: "Bree Serif", serif;
+}
+
+.container__personalInformation--light {
+  color: #454e56;
 }
 
 hr {
@@ -46,7 +51,7 @@ hr {
   border-top: 2px dashed #b2becd;
 }
 
-.button {
+.button__download--resume {
   border: 2px solid #fa8142;
   background: #12181b;
   color: #fff;
@@ -59,22 +64,33 @@ hr {
   font-size: 2.5rem;
 }
 
-.button:hover {
+.button__download--resume--light {
+  color: #454e56;
+  background-color: #fff;
+}
+
+.button__download--resume:hover {
   background-color: #fa8142;
   transform: translateY(-0.5rem);
   transition: all 0.2s ease-in-out;
 }
 
 span {
-  /* border: 2px solid #fa8142; */
   background-image: linear-gradient(90deg, #fa8142, #ff4088);
   color: white;
   border-radius: 0.5rem;
   padding: 0 4px;
 }
 
+.image--light {
+  background-color: rgb(187, 185, 185);
+}
+
 @media screen and (max-width: 500px) {
-  .info {
+  .container__main {
+    width: 100%;
+  }
+  .container__personalInformation {
     flex-direction: column;
     width: 100%;
     font-size: 1rem;
@@ -82,14 +98,13 @@ span {
   .container__dynamictext {
     font-size: 1.5rem;
   }
-
   .container__main {
     gap: 2rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .info {
+  .container__personalInformation {
     flex-direction: column;
     width: 100%;
     font-size: 2rem;
