@@ -29,6 +29,10 @@
   padding: 3rem;
 }
 
+.container__image--light {
+  background-color: rgb(93, 93, 97);
+}
+
 .logo {
   width: 45%;
 }
@@ -54,6 +58,10 @@
   font-family: "Bree Serif", serif;
 }
 
+.container__card--desc--light {
+  color: #8a8d91;
+}
+
 .container__button {
   display: flex;
   justify-content: space-between;
@@ -69,7 +77,6 @@
   margin-bottom: 2rem;
 }
 
-
 .button__common {
   background: #12181b;
   width: 45%;
@@ -79,7 +86,10 @@
   font-size: 2rem;
   text-align: center;
   font-family: "Bree Serif", serif;
+}
 
+.button__common--light {
+  background-color: #fff;
 }
 
 .button__common2 {
@@ -94,6 +104,10 @@
   margin-top: 2rem;
 }
 
+.button__common2--light {
+  background-color: #fff;
+}
+
 button {
   font-family: inherit;
   background: inherit;
@@ -103,7 +117,7 @@ button {
 }
 
 .button--light {
-  background-color: #fff;
+  background: inherit;
   color: #454e56;
 }
 
@@ -156,9 +170,8 @@ button {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .container__card {
     width: 95%;
   }
 }
-

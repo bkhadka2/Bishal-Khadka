@@ -6,9 +6,8 @@ import PsychologyRoundedIcon from "@mui/icons-material/PsychologyRounded";
 import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
 import ToggleOnIcon from "@mui/icons-material/ToggleOn";
 import ToggleOffIcon from "@mui/icons-material/ToggleOff";
-// import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navigation = (props) => {
   const [enterHome, setEnterHome] = useState(false);
@@ -18,6 +17,9 @@ const Navigation = (props) => {
   const [enterExperience, setEnterExperience] = useState(false);
   const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    props.toggle(toggle);
+  });
   const homeEnterHandler = () => {
     setEnterHome(true);
   };
@@ -51,9 +53,13 @@ const Navigation = (props) => {
   const toggleHandler = () => {
     setToggle((prev) => !prev);
   };
-  props.toggle(toggle);
+
   return (
-    <div className={classes.container__navigation}>
+    <div
+      className={`${classes.container__navigation} ${
+        toggle ? classes["container__navigation--light"] : ""
+      }`}
+    >
       <div
         className={classes["container__navigation--element"]}
         onMouseEnter={homeEnterHandler}
@@ -75,14 +81,14 @@ const Navigation = (props) => {
         onMouseEnter={aboutMeEnterHandler}
         onMouseLeave={aboutMeLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/contact">
+        <NavLink activeClassName={classes.active} to="/contacts">
           <InfoRoundedIcon className={classes.navigation__icon} />
           <span
             className={`${
               enterAboutme ? classes.icon__hovered : classes.icon__noHover
             }`}
           >
-            Contact
+            Contacts
           </span>
         </NavLink>
       </div>
@@ -123,18 +129,21 @@ const Navigation = (props) => {
         onMouseEnter={experienceEnterHandler}
         onMouseLeave={experienceLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/experience">
+        <NavLink activeClassName={classes.active} to="/experiences">
           <DownhillSkiingIcon className={classes.navigation__icon} />
           <span
             className={`${
               enterExperience ? classes.icon__hovered : classes.icon__noHover
             }`}
           >
-            Experience
+            Experiences
           </span>
         </NavLink>
       </div>
-      <div className={classes["container__navigation--element"]} onClick={toggleHandler}>
+      <div
+        className={classes["container__navigation--element"]}
+        onClick={toggleHandler}
+      >
         {toggle && (
           <button className={classes.button__toggleOn}>
             <ToggleOnIcon className={classes.navigation__icon} />

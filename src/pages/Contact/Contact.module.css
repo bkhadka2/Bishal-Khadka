@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
+
+.container__card {
+  background-color: #2a2e35;
+  border-radius: 0.5rem;
+  width: 40%;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
+  animation: 1s ease-out moveCard;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: #fff;
+  font-family: "Bree Serif", serif;
+}
+
+.heading {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  font-size: 2rem;
+  color: rgb(109, 107, 107);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.name {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 70%;
+  font-family: inherit;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+textarea {
+  font-family: inherit;
+  width: 70%;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.email {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.send {
+  width: 100%;
+  margin: 1rem;
+}
+
+.send > input {
+  background-color: green;
+  border: none;
+  border-radius: 0.4rem !important;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  width: 50%;
+}
+
+.send > input:hover {
+  background-color: #09c372;
+}
+
+@media screen and (max-width: 1500px) {
+  .container__card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container__card {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container__card {
+    width: 95%;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .send > input {
+    width: 70%;
+    padding: 1rem 2rem !important;
+  }
+}

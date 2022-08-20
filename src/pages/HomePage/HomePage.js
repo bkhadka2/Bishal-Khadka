@@ -23,11 +23,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div
-        className={`${classes.container__main} ${
-          props.toggle ? classes["container__main--light"] : ""
-        }`}
-      >
+      <div className={classes.container__main}>
         <div className={classes.container__dynamictext}>
           <h1 className={classes["container__dynamictext--intro"]}>{intro}</h1>
         </div>
@@ -49,7 +45,7 @@ const Home = (props) => {
         </div>
         <div>
           <a
-            href="https://github.com/bkhadka2"
+            href="https://drive.google.com/file/d/1bWb8JocWBOj6P6Fa4y52DUmtUHlhylOS/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

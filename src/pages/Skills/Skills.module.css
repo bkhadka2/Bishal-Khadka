@@ -8,6 +8,10 @@
   align-self: center;
 }
 
+.container__main--light {
+  background-color: grey;
+}
+
 .logo {
   padding: 2rem;
   width: 80%;
@@ -61,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .container__main {
     display: grid;
     gap: 2rem;
@@ -70,5 +74,6 @@
     grid-auto-columns: 54%;
     align-self: center;
     justify-content: center;
+    overflow: unset;
   }
 }

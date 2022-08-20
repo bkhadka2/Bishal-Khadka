@@ -8,15 +8,15 @@ import Projects from "../../pages/Projects/Projects";
 import Skills from "../../pages/Skills/Skills";
 import Experience from "../../pages/Experience/Experience";
 
-const MainPage = () => {
+const MainPage = (props) => {
   const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    props.mode(toggle);
+  });
   const ToggleHandler = (prev) => {
-    useEffect(() => {
-      setToggle(prev);
-    }, [prev]);
+    setToggle(prev);
   };
-  console.log(toggle);
 
   return (
     <>
@@ -26,20 +26,20 @@ const MainPage = () => {
           <Route path="/" exact>
             <Redirect to="/home"></Redirect>
           </Route>
-          <Route path="/contact">
-            <Contact toggle={toggle}/>
+          <Route path="/contacts">
+            <Contact toggle={toggle} />
           </Route>
           <Route path="/home">
-            <Home toggle={toggle}/>
+            <Home toggle={toggle} />
           </Route>
           <Route path="/projects">
-            <Projects />
+            <Projects toggle={toggle} />
           </Route>
           <Route path="/skills">
-            <Skills />
+            <Skills toggle={toggle} />
           </Route>
-          <Route path="/experience">
-            <Experience />
+          <Route path="/experiences">
+            <Experience toggle={toggle} />
           </Route>
         </Switch>
       </div>

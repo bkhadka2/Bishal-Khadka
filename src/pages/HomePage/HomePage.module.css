@@ -8,10 +8,6 @@
   align-items: center;
 }
 
-.container__main--light {
-  background-color: #dbe1e8;
-}
-
 .container__dynamictext--intro {
   background-image: linear-gradient(-90deg, #fa8142, #ff4088);
   color: transparent;
@@ -48,7 +44,7 @@ hr {
   margin-bottom: 1.5rem;
   border: none;
   width: 98%;
-  border-top: 2px dashed #b2becd;
+  border-top: 2px dashed #b2becd !important;
 }
 
 .button__download--resume {
@@ -62,6 +58,9 @@ hr {
   text-align: center;
   font-family: "Bree Serif", serif;
   font-size: 2.5rem;
+  -webkit-animation: bounce 0.3s infinite alternate;
+  -moz-animation: bounce 0.3s infinite alternate;
+  animation: bounce .7s infinite alternate;
 }
 
 .button__download--resume--light {
@@ -83,10 +82,27 @@ span {
 }
 
 .image--light {
-  background-color: rgb(187, 185, 185);
+  background-color: rgb(110, 108, 108);
+  border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1.2);
+  }
+}
+@-moz-keyframes bounce {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 550px) {
   .container__main {
     width: 100%;
   }
@@ -103,6 +119,15 @@ span {
   }
 }
 
+@media screen and (max-height: 790px) {
+  .container__personalInformation {
+    font-size: 2rem;
+  }
+  img {
+    width: 40vh;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .container__personalInformation {
     flex-direction: column;
@@ -111,3 +136,4 @@ span {
     padding: 1rem;
   }
 }
+

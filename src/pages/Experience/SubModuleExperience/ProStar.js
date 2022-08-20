@@ -1,11 +1,16 @@
 import classes from "./Work.module.css";
 
-const ProStar = () => {
+const ProStar = (props) => {
   return (
     <>
-      <div className={classes.header}>
-        <h1>ProStar</h1>
-      </div>
+      <h1
+        className={`${classes.header} ${
+          props.toggle ? classes.header__light : ""
+        }`}
+      >
+        ProStar
+      </h1>
+
       <div className={classes.bulletPoints}>
         <ul>
           <li>

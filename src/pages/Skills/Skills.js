@@ -9,9 +9,13 @@ import flask from "../../components/Assets/flask.svg";
 import aws from "../../components/Assets/aws.svg";
 import cplusplus from "../../components/Assets/cplusplus.svg";
 
-const Skills = () => {
+const Skills = (props) => {
   return (
-    <div className={classes.container__main}>
+    <div
+      className={`${classes.container__main} ${
+        props.toggle ? classes["container__main--light"] : ""
+      }`}
+    >
       <div className={classes.container}>
         <img src={js} alt="javascript" className={classes.logo} />
       </div>

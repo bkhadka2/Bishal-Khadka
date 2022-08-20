@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
+
+.container__main {
+  display: flex;
+  color: white;
+  width: 85%;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+}
+
+.container__main--nodisplay {
+  display: none;
+}
+
+.container__main--success {
+  background-color: green;
+}
+
+.container__main--error {
+  background-color: red;
+}
+
+.check {
+  font-size: 4rem;
+}
+
+.container__iconMessage {
+  display: flex;
+  gap: 8rem;
+}
+
+.alert {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-family: "Bree Serif", serif;
+}
+
+.close {
+  font-size: 3rem;
+  cursor: pointer;
+}

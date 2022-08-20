@@ -1,9 +1,15 @@
 import classes from "./Work.module.css";
 
-const CMU = () => {
+const CMU = (props) => {
   return (
     <>
-      <h1 className={classes.header}>CMU</h1>
+      <h1
+        className={`${classes.header} ${
+          props.toggle ? classes.header__light : ""
+        }`}
+      >
+        CMU
+      </h1>
       <div className={classes.bulletPoints}>
         <ul>
           <li>

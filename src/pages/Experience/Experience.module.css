@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;1,300&family=Poppins&family=Rubik+Maze&family=Uchen&display=swap");
 
-.exp {
-  color: white;
+.container__main {
+  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -11,20 +11,25 @@
   overflow-y: scroll;
 }
 
-.exp::-webkit-scrollbar {
+.container__main--light {
+  color: #454e56;
+}
+
+.container__main::-webkit-scrollbar {
   width: 0.8rem;
 }
 
-.exp::-webkit-scrollbar-thumb {
+.container__main::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: white;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
 
-.expi {
+.container__main--experiences {
   display: flex;
   flex-wrap: wrap;
+  /* border: 2px solid red; */
 }
 
 .button {
@@ -36,7 +41,7 @@
   text-align: center;
 }
 
-.work {
+.container__main--experiences--work {
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -47,13 +52,17 @@
   align-self: center;
 }
 
+.container__main--experiences--work--light {
+  border: 0.1rem solid #12181b !important;
+}
+
 .desc {
   padding: 2rem;
   width: 70rem;
   font-family: "Bree Serif", serif;
 }
 
-.workButton {
+.button__work {
   border: 2px solid #fa8142;
   background: #12181b;
   color: #fff;
@@ -65,11 +74,16 @@
   font-family: "Bree Serif", serif;
 }
 
-.workButton:hover {
+.button__work--light {
+  background-color: #fff;
+  color: #454e56;
+}
+
+.buttonWork:hover {
   background-color: #fa8142;
 }
 
-.heading {
+.container__main--heading {
   font-size: 4rem;
   font-family: "Bree Serif", serif;
   margin-top: 2rem;
@@ -80,18 +94,18 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .exp {
+  .container__main {
     align-items: center;
     width: 100%;
-    gap: .2rem;
+    gap: 0.2rem;
   }
-  .expi {
+  .container__main--experiences {
     width: 100%;
   }
   .desc {
     font-size: 2rem;
   }
-  .work {
+  .container__main--experiences--work {
     gap: 1rem;
     padding: 5rem;
     border: 0.1rem solid lightgrey;
@@ -102,21 +116,22 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .exp {
+@media screen and (max-width: 550px) {
+  .container__main {
     align-items: center;
     width: 100%;
     overflow-y: unset;
     overflow-x: unset;
-    gap: .2rem;
+    gap: 0.2rem;
+    height: 100%;
   }
-  .expi {
+  .container__main--experiences {
     width: 100%;
   }
   .desc {
     font-size: 1.5rem;
   }
-  .work {
+  .container__main--experiences--work {
     gap: 1rem;
     padding: 5rem;
     border: 0.1rem solid lightgrey;
@@ -126,9 +141,4 @@
     margin: 2rem auto;
     flex-direction: row;
   }
-  hr {
-    border-top: none;
-  }
 }
-
-

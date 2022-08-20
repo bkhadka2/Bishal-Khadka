@@ -10,7 +10,7 @@ import ui from "../../components/Assets/ui.svg";
 
 import FlexMe from "../../components/UI/FlexMe";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <FlexMe>
       <Project
@@ -19,6 +19,7 @@ const Projects = () => {
         description="This application allows users to draw an uppercase character in a canvas and converts the drawn character into digital text. (Python, Machine Learning, Deep Learning, HTML, Jupyter Notebook, CSS)"
         linkCode="https://github.com/bkhadka2/WriteIn-Machine-Learning"
         linkDemo="https://writein-char-recognition.herokuapp.com/"
+        toggle={props.toggle}
       />
       <Project
         logo={education}
@@ -26,6 +27,7 @@ const Projects = () => {
         description="This is a simple website to help children in their education by finding sponsors/donors in Dolpo, Nepal. Was able to find almost 10 sponsors. (JavaScript, NodeJs, Express, handlebars, mongodb)"
         linkCode="https://github.com/bkhadka2/Education_Funding_App"
         linkDemo="https://thawing-harbor-91342.herokuapp.com/"
+        toggle={props.toggle}
       />
       <Project
         logo={weather}
@@ -33,6 +35,7 @@ const Projects = () => {
         description="This application uses Fetch API and promises to fetch the weather data of a particular city. (JS, React, HTML, CSS)"
         linkCode="https://github.com/bkhadka2/FetchAPI-Weather"
         linkDemo="https://bkhadka2.github.io/FetchAPI-Weather/"
+        toggle={props.toggle}
       />
       <Project
         logo={Kanban}
@@ -40,6 +43,7 @@ const Projects = () => {
         description="This application is a simple clone of kanban board for personal use. (Python, Flask, HTML, CSS, SQLAlchemy)"
         linkCode="https://github.com/bkhadka2/Bishal-Kanban"
         linkDemo="https://bishalkanban.herokuapp.com/"
+        toggle={props.toggle}
       />
 
       <Project
@@ -47,24 +51,28 @@ const Projects = () => {
         title="Artificial Intelligence Projects"
         description="Various Projects like self driving car, goat agent in baghchal game were made. (Python, Tensorflow)"
         linkCode="https://github.com/bkhadka2/Artificial-Intelligence-Projects"
+        toggle={props.toggle}
       />
       <Project
         logo={ui}
         title="User Interfaces"
         description="Making User Interfaces using react and other third party libraries. (React, JS, HTML, CSS)"
         linkCode="https://github.com/bkhadka2/UIs"
+        toggle={props.toggle}
       />
       <Project
         logo={object}
         title="Object Oriented Programming"
         description="Projects completed with the core concept of OOP like Inheritance, Polymorphism, Abstraction, and Encapsulation. (C++, Java, JS)"
         linkCode="https://github.com/bkhadka2/OOP"
+        toggle={props.toggle}
       />
       <Project
         logo={editor}
         title="Zyco Text Editor"
         description="Simple clone of the text editor like notepad++ with terminal built in and various binding functions. (Python, TKinter)"
         linkCode="https://github.com/bkhadka2/Zyco-Text-Editor/tree/master/Zyco"
+        toggle={props.toggle}
       />
     </FlexMe>
   );
