@@ -65,7 +65,7 @@ const Navigation = (props) => {
         onMouseEnter={homeEnterHandler}
         onMouseLeave={homeLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/Bishal-Khadka/home">
+        <NavLink activeClassName={classes.active} to="/home">
           <CottageIcon className={classes.navigation__icon} />
           <span
             className={`${
@@ -81,7 +81,7 @@ const Navigation = (props) => {
         onMouseEnter={aboutMeEnterHandler}
         onMouseLeave={aboutMeLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/Bishal-Khadka/contacts">
+        <NavLink activeClassName={classes.active} to="/contacts">
           <InfoRoundedIcon className={classes.navigation__icon} />
           <span
             className={`${
@@ -97,7 +97,7 @@ const Navigation = (props) => {
         onMouseEnter={projectEnterHandler}
         onMouseLeave={projectLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/Bishal-Khadka/projects">
+        <NavLink activeClassName={classes.active} to="/projects">
           <AccountTreeRoundedIcon className={classes.navigation__icon} />
           <span
             className={`${
@@ -113,7 +113,7 @@ const Navigation = (props) => {
         onMouseEnter={skillEnterHandler}
         onMouseLeave={skillLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/Bishal-Khadka/skills">
+        <NavLink activeClassName={classes.active} to="/skills">
           <PsychologyRoundedIcon className={classes.navigation__icon} />
           <span
             className={`${
@@ -129,7 +129,7 @@ const Navigation = (props) => {
         onMouseEnter={experienceEnterHandler}
         onMouseLeave={experienceLeaveHandler}
       >
-        <NavLink activeClassName={classes.active} to="/Bishal-Khadka/experiences">
+        <NavLink activeClassName={classes.active} to="/experiences">
           <DownhillSkiingIcon className={classes.navigation__icon} />
           <span
             className={`${
