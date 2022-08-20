@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Bishal-Khadka/static/css/main.6f687b15.css",
+    "main.js": "/Bishal-Khadka/static/js/main.8e522de1.js",
+    "static/js/787.9c5d9fa7.chunk.js": "/Bishal-Khadka/static/js/787.9c5d9fa7.chunk.js",
+    "static/media/flask.svg": "/Bishal-Khadka/static/media/flask.e83f9d4c009ea74a5dd1ed872159da52.svg",
+    "static/media/ui.svg": "/Bishal-Khadka/static/media/ui.602904f7c333c72b46f1c768cb29179c.svg",
+    "static/media/AI.svg": "/Bishal-Khadka/static/media/AI.7eae8acf9124e860aa85f3b9f8684b55.svg",
+    "static/media/tor.svg": "/Bishal-Khadka/static/media/tor.b2e9334b3950505e2f9c00ff4e154304.svg",
+    "static/media/scientist.svg": "/Bishal-Khadka/static/media/scientist.f67237bd853159ac2316fdb62a44ffec.svg",
+    "static/media/aws.svg": "/Bishal-Khadka/static/media/aws.db5491312a4107a5890bda4a5c9a7250.svg",
+    "static/media/ml.svg": "/Bishal-Khadka/static/media/ml.838eff32f8f198661f581ae5c3e3f628.svg",
+    "static/media/virus.svg": "/Bishal-Khadka/static/media/virus.513eaff8d7d1ef1a2c4c28536c4e76db.svg",
+    "static/media/react.svg": "/Bishal-Khadka/static/media/react.1520bd67b9711ed91ace46b169bc2491.svg",
+    "static/media/editor.svg": "/Bishal-Khadka/static/media/editor.101937df0d94955b9e5217c50b0f1b28.svg",
+    "static/media/kanban.svg": "/Bishal-Khadka/static/media/kanban.9108365601594a5a08997309779bcf5f.svg",
+    "static/media/cplusplus.svg": "/Bishal-Khadka/static/media/cplusplus.a2822be0d84665eef078fff250454d75.svg",
+    "static/media/node.svg": "/Bishal-Khadka/static/media/node.7ca28bcc5b19ce40dfc23043cfb31f27.svg",
+    "static/media/object.svg": "/Bishal-Khadka/static/media/object.98defce97e85c4c2506aa3ee3166cfed.svg",
+    "static/media/education.svg": "/Bishal-Khadka/static/media/education.617530d9a2be5efa46a124e3c70e18c8.svg",
+    "static/media/python.svg": "/Bishal-Khadka/static/media/python.2abc268ffd5e4bb1df19c10c0c79e501.svg",
+    "static/media/weather.svg": "/Bishal-Khadka/static/media/weather.535b7568c5fa6d155a8f25ee1df3669f.svg",
+    "static/media/github.svg": "/Bishal-Khadka/static/media/github.aed8856f102697d599b75b35c162a8e6.svg",
+    "index.html": "/Bishal-Khadka/index.html",
+    "static/media/javascript.svg": "/Bishal-Khadka/static/media/javascript.218515feb76f692771fe00cfeadc46c8.svg",
+    "static/media/css3.svg": "/Bishal-Khadka/static/media/css3.a970faff57243830beb36b718dbf74fc.svg",
+    "static/media/html.svg": "/Bishal-Khadka/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
+    "static/media/linkedin.svg": "/Bishal-Khadka/static/media/linkedin.cbf3eac958ddc5dcb0f7d9f741becd11.svg",
+    "main.6f687b15.css.map": "/Bishal-Khadka/static/css/main.6f687b15.css.map",
+    "main.8e522de1.js.map": "/Bishal-Khadka/static/js/main.8e522de1.js.map",
+    "787.9c5d9fa7.chunk.js.map": "/Bishal-Khadka/static/js/787.9c5d9fa7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f687b15.css",
+    "static/js/main.8e522de1.js"
+  ]
+}
