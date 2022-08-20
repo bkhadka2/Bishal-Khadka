@@ -14,7 +14,7 @@ const Contact = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    console.log(form);
+    // console.log(form);
     e.preventDefault();
     emailjs
       .sendForm(
@@ -40,6 +40,7 @@ const Contact = (props) => {
           setError(true);
         }
       );
+      e.target.reset();
   };
   return (
     <FlexMe toggle={props.toggle}>
