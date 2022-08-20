@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bishal-Khadka/static/css/main.3c0af921.css",
-    "main.js": "/Bishal-Khadka/static/js/main.2fec816f.js",
+    "main.js": "/Bishal-Khadka/static/js/main.51ad22cc.js",
     "static/js/787.9c5d9fa7.chunk.js": "/Bishal-Khadka/static/js/787.9c5d9fa7.chunk.js",
     "static/media/flask.svg": "/Bishal-Khadka/static/media/flask.e83f9d4c009ea74a5dd1ed872159da52.svg",
     "static/media/ui.svg": "/Bishal-Khadka/static/media/ui.602904f7c333c72b46f1c768cb29179c.svg",
@@ -27,11 +27,11 @@
     "static/media/html.svg": "/Bishal-Khadka/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "static/media/linkedin.svg": "/Bishal-Khadka/static/media/linkedin.cbf3eac958ddc5dcb0f7d9f741becd11.svg",
     "main.3c0af921.css.map": "/Bishal-Khadka/static/css/main.3c0af921.css.map",
-    "main.2fec816f.js.map": "/Bishal-Khadka/static/js/main.2fec816f.js.map",
+    "main.51ad22cc.js.map": "/Bishal-Khadka/static/js/main.51ad22cc.js.map",
     "787.9c5d9fa7.chunk.js.map": "/Bishal-Khadka/static/js/787.9c5d9fa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0af921.css",
-    "static/js/main.2fec816f.js"
+    "static/js/main.51ad22cc.js"
   ]
 }
