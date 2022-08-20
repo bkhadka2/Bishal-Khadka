@@ -23,22 +23,22 @@ const MainPage = (props) => {
       <div className={classes.container__main}>
         <Navigation toggle={ToggleHandler} />
         <Switch>
-          <Route path="Bishal-Khadka/" exact>
-            <Redirect to="/home"></Redirect>
+          <Route path="/Bishal-Khadka/" exact>
+            <Redirect to="/Bishal-Khadka/home"></Redirect>
           </Route>
-          <Route path="/contacts">
+          <Route path="/Bishal-Khadka/contacts">
             <Contact toggle={toggle} />
           </Route>
-          <Route path="/home">
+          <Route path="/Bishal-Khadka/home">
             <Home toggle={toggle} />
           </Route>
-          <Route path="/projects">
+          <Route path="/Bishal-Khadka/projects">
             <Projects toggle={toggle} />
           </Route>
-          <Route path="/skills">
+          <Route path="/Bishal-Khadka/skills">
             <Skills toggle={toggle} />
           </Route>
-          <Route path="/experiences">
+          <Route path="/Bishal-Khadka/experiences">
             <Experience toggle={toggle} />
           </Route>
         </Switch>

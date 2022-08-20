@@ -95,6 +95,15 @@ a:link,
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .container__navigation {
+    gap: 2rem;
+  }
+  .navigation__icon {
+    font-size: 6rem !important;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .container__navigation {
     width: 20%;
