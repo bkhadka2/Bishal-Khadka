@@ -24,7 +24,7 @@
 }
 
 .check {
-  font-size: 4rem;
+  font-size: 4rem !important;
 }
 
 .container__iconMessage {
@@ -39,6 +39,6 @@
 }
 
 .close {
-  font-size: 3rem;
-  cursor: pointer;
+  font-size: 3rem !important;
+  cursor: pointer !important;
 }

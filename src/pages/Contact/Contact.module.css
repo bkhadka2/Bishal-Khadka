@@ -3,7 +3,7 @@
 .container__card {
   background-color: #2a2e35;
   border-radius: 0.5rem;
-  width: 40%;
+  width: 60%;
   height: fit-content;
   transition: all 0.2s ease-in-out;
   animation: 1s ease-out moveCard;
