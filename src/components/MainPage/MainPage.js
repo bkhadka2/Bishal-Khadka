@@ -23,7 +23,7 @@ const MainPage = (props) => {
       <div className={classes.container__main}>
         <Navigation toggle={ToggleHandler} />
         <Switch>
-          <Route path="/" exact>
+          <Route path="Bishal-Khadka/" exact>
             <Redirect to="/home"></Redirect>
           </Route>
           <Route path="/contacts">
