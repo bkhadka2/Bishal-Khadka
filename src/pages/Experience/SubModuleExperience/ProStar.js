@@ -24,6 +24,10 @@ const ProStar = (props) => {
             training videos and quizes for faster and easier on-boarding process
           </li>
           <li>Performed more than 100 regression tests</li>
+          <li>
+            Worked on fixing bugs on pointman.cloud software and assisted in
+            features like 811 positive response for colorado
+          </li>
         </ul>
       </div>
     </>
