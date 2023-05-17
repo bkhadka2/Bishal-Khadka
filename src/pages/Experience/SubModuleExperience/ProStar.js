@@ -25,8 +25,7 @@ const ProStar = (props) => {
           </li>
           <li>Performed more than 100 regression tests</li>
           <li>
-            Worked on fixing bugs on pointman.cloud software and assisted in
-            features like 811 positive response for colorado
+            Worked on bug fixes on pointman.cloud software and practiced agile software development
           </li>
         </ul>
       </div>
