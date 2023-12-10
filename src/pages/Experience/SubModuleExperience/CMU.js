@@ -13,17 +13,18 @@ const CMU = (props) => {
       <div className={classes.bulletPoints}>
         <ul>
           <li>
-            Did research and published two papers on malicious URLs and TOR
-            Traffic in which models have accuracy of more than 98%
+            Conducted research and authored two papers on malicious URLs and TOR
+            Traffic, presenting models with an exceptional accuracy exceeding
+            98%
           </li>
           <li>
-            Assisted multiple professors with their classes as a teaching
-            assistant including classes like OOP, Data Structure and Algorithms,
-            Python
+            Served as a teaching assistant for various courses, collaborating
+            with multiple professors to support classes such as Object-Oriented
+            Programming, Data Structures and Algorithms, and Python
           </li>
           <li>
-            Became president of Cyber Security Club and was able to increase
-            members of the club from 6 to around 15
+            Elevated the Cyber Security Club as its president, successfully
+            growing its membership from 6 to approximately 15 members
           </li>
         </ul>
       </div>

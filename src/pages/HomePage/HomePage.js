@@ -36,16 +36,19 @@ const Home = (props) => {
             <img src={scientist} alt="man with glass" />
           </div>
           <div>
-            I am <span>Bishal Khadka</span>. Ambitious and hard working software
-            developer who loves to learn and try state-of-the-art technologies.
-            <hr /> Make things and break things to gain deeper understanding of
-            a subject is my motto. <hr />I love to play FIFA and hangout with my
-            girlfriend and other family members in my spare time.
+            I am <span>Bishal Khadka</span>. a dedicated and ambitious software
+            developer with a passion for continuous learning and exploration of
+            state-of-the-art technologies.
+            <hr /> My commitment to gaining a profound understanding of subjects
+            is reflected in my approach of both creating and deconstructing,
+            allowing for a comprehensive mastery of concepts. <hr />
+            Outside of my professional endeavors, I enjoy leisure activities
+            such as playing FIFA and spending quality time with my girlfriend.
           </div>
         </div>
         <div>
           <a
-            href="https://drive.google.com/file/d/1bWb8JocWBOj6P6Fa4y52DUmtUHlhylOS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JbYoN9-Bl5T0ns0Kg5s4RqWOgqVzrCY6/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

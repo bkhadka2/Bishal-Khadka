@@ -18,7 +18,6 @@ const Projects = (props) => {
         title="WriteIn Machine Learning"
         description="This application allows users to draw an uppercase character in a canvas and converts the drawn character into digital text. (Python, Machine Learning, Deep Learning, HTML, Jupyter Notebook, CSS)"
         linkCode="https://github.com/bkhadka2/WriteIn-Machine-Learning"
-        linkDemo="https://writein-char-recognition.herokuapp.com/"
         toggle={props.toggle}
       />
       <Project
@@ -26,7 +25,6 @@ const Projects = (props) => {
         title="Education Funding App"
         description="This is a simple website to help children in their education by finding sponsors/donors in Dolpo, Nepal. Was able to find almost 10 sponsors. (JavaScript, NodeJs, Express, handlebars, mongodb)"
         linkCode="https://github.com/bkhadka2/Education_Funding_App"
-        linkDemo="https://thawing-harbor-91342.herokuapp.com/"
         toggle={props.toggle}
       />
       <Project
@@ -34,7 +32,6 @@ const Projects = (props) => {
         title="Weather App"
         description="This application uses Fetch API and promises to fetch the weather data of a particular city. (JS, React, HTML, CSS)"
         linkCode="https://github.com/bkhadka2/FetchAPI-Weather"
-        linkDemo="https://bkhadka2.github.io/FetchAPI-Weather/"
         toggle={props.toggle}
       />
       <Project
@@ -42,7 +39,6 @@ const Projects = (props) => {
         title="Kanban Board"
         description="This application is a simple clone of kanban board for personal use. (Python, Flask, HTML, CSS, SQLAlchemy)"
         linkCode="https://github.com/bkhadka2/Bishal-Kanban"
-        linkDemo="https://bishalkanban.herokuapp.com/"
         toggle={props.toggle}
       />
 
