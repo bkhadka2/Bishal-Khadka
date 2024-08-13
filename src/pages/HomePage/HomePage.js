@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
-import scientist from "../../components/Assets/scientist.svg";
+// import scientist from "../../components/Assets/scientist.svg";
+import bishal from "../../components/Assets/bishal.jpg";
 import classes from "./HomePage.module.css";
 let index = 0;
 
@@ -33,22 +34,23 @@ const Home = (props) => {
           }`}
         >
           <div className={`${props.toggle ? classes["image--light"] : ""}`}>
-            <img src={scientist} alt="man with glass" />
+            {/* <img src={scientist} alt="man with glass" /> */}
+            <img src={bishal} alt="man with glass" height="400px" />
           </div>
           <div>
-            I am <span>Bishal Khadka</span>. a dedicated and ambitious software
+            I am <span>Bishal Khadka</span>, a dedicated and ambitious software
             developer with a passion for continuous learning and exploration of
-            state-of-the-art technologies.
+            various technologies.
             <hr /> My commitment to gaining a profound understanding of subjects
             is reflected in my approach of both creating and deconstructing,
             allowing for a comprehensive mastery of concepts. <hr />
-            Outside of my professional endeavors, I enjoy leisure activities
-            such as playing FIFA and spending quality time with my girlfriend.
+            During my free time, I like to watch tv series, hang out with my wife,
+            and sometimes play FIFA.
           </div>
         </div>
         <div>
           <a
-            href="https://drive.google.com/file/d/1JbYoN9-Bl5T0ns0Kg5s4RqWOgqVzrCY6/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hjdg77aCUwMdYfE7IiDinPC0E6JWv64H/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

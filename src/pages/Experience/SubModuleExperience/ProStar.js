@@ -19,11 +19,9 @@ const ProStar = (props) => {
             into the Pointman application map
           </li>
           <li>
-            Conceived and crafted an automation testing suite from the ground
-            up, orchestrating the seamless migration of approximately 400 test
-            cases initially scripted in Jest-Puppeteer to Behave-Selenium. This
-            transition was undertaken to enhance browser compatibility and
-            elevate code management and maintainability
+            Authored over 1500 comprehensive test cases to rigorously assess app
+            robustness and performance, resulting in a 50% increase in
+            application availability and reliability
           </li>
           <li>
             Engaged actively in code reviews, fostering collaboration with team

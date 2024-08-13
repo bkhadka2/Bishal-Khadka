@@ -42,7 +42,7 @@ const Experience = (props) => {
             >
               ProStar
             </button>
-            Software Developer and <br /> Automation Test Lead
+            Software Engineer and <br /> Automation Test Lead
           </div>
           <hr />
           <div className={classes.button}>
@@ -54,7 +54,7 @@ const Experience = (props) => {
             >
               CMU
             </button>
-            Research / <br />
+            Software Engineer and <br />
             Teaching Assistant
           </div>
         </div>

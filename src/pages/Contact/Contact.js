@@ -18,7 +18,7 @@ const Contact = (props) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_8vfzzxu",
+        "service_ftwcmao",
         "template_9q4krx5",
         form.current,
         "nsCGEeUzWUL84RagB"

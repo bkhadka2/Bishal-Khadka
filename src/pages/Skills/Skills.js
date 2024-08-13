@@ -8,6 +8,7 @@ import python from "../../components/Assets/python.svg";
 import flask from "../../components/Assets/flask.svg";
 import aws from "../../components/Assets/aws.svg";
 import cplusplus from "../../components/Assets/cplusplus.svg";
+import ts from "../../components/Assets/typescript-svgrepo-com.svg"
 
 const Skills = (props) => {
   return (
@@ -18,6 +19,9 @@ const Skills = (props) => {
     >
       <div className={classes.container}>
         <img src={js} alt="javascript" className={classes.logo} />
+      </div>
+      <div className={classes.container}>
+        <img src={ts} alt="typescript" className={classes.logo} />
       </div>
       <div className={classes.container}>
         <img src={react} alt="react" className={classes.logo} />
